@@ -1,3 +1,11 @@
+# 实现的功能
+
+在task模块部分对进程第一次调用的时间进行了保存，并封装了taskinfo所需信息的查询功能与syscall调用次数的更新功能
+
+之后在syscall模块针对每次系统调用通过之前的syscall更新函数存入任务控制块中
+
+当需要taskinfo的时候，通过调用task模块封装的函数即可完成
+
 # 1
 
 - [ERROR] [kernel] PageFault in application, bad addr = 0x0, bad instruction = 0x80400408, core dumped.
